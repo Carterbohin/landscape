@@ -116,6 +116,25 @@ div.offer {
     height: auto;
   }
 
+  .swiper-slide {
+    position: relative; /* Enables positioning of text within the slide */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to align center perfectly */
+    color: white; /* Text color */
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds contrast for visibility */
+    z-index: 10; /* Ensures it appears above the image */
+    text-align: center;
+    background-color: $primaryColor ;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 
 
