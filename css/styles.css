@@ -342,7 +342,7 @@ header a {
   font-size: medium;
 }
 header a:hover {
-  color: #7c1d47;
+  color: #840e43;
 }
 
 #navWrapper {
@@ -364,7 +364,7 @@ header a:hover {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
+  color: #840e43;
   font-weight: 300;
 }
 main p {
@@ -467,7 +467,7 @@ footer a {
   }
   /*Naviation bar*/
   #theNav {
-    background-color: #3990c3;
+    background-color: #00662c;
     height: 0;
     overflow: hidden;
     list-style-type: none;
@@ -483,7 +483,7 @@ footer a {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
   }
   #theNav li.active a {
-    background-color: #7c1d47;
+    background-color: #840e43;
   }
   #theNav li.a:hover {
     background-color: rgba(0, 0, 0, 0.3);
@@ -513,7 +513,7 @@ footer a {
     display: none;
   }
   #theNav {
-    background-color: #3990c3;
+    background-color: #00662c;
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -537,7 +537,7 @@ footer a {
     color: rgba(255, 255, 255, 0.5);
   }
   #theNav li.active a {
-    background-color: #7c1d47;
+    background-color: #840e43;
   }
   #theNav li ul {
     background-color: #1d295f;
