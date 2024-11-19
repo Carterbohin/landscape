@@ -322,20 +322,18 @@ body {
 /* --------------------------- HEADER --------------------------- */
 #headerWrapper {
   border-bottom: 1px solid #ccc;
+  position: relative; /* Keeps the header in flow */
+  z-index: 1100; /* Ensures it stays above the nav bar */
 }
 
+/* Header styles remain as they are */
 header {
   display: grid;
   grid-template-columns: 50px auto 44px;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  align-items: center;
+  align-items: center; /* Vertically centers items */
   padding: 0.5rem 10px;
-}
-header span {
-  font-size: 1.6rem;
-  font-weight: 300;
-  color: #1d295f;
 }
 header a {
   text-align: center;
@@ -347,7 +345,21 @@ header a:hover {
   color: #7c1d47;
 }
 
-/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+#navWrapper {
+  position: fixed; /* Keeps the nav bar visible on scroll */
+  top: 60px; /* Positions it below the header (adjust this value based on the header height) */
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Stays above content but below the header */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: white;
+}
+#navWrapper li {
+  padding: 10px;
+}
+
 /* --------------------------- MAIN --------------------------- */
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
