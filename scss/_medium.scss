@@ -42,3 +42,17 @@
         left: auto;
     }
 }
+
+div.customers {
+    section {
+        display: grid;
+        grid-template-columns: 140px auto;
+        column-gap: 4px;
+        padding: 10px;
+        img {
+            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+           
+        }
+    
+    }//end section
+}//end div

@@ -4,3 +4,12 @@ header, nav, main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
+
+
+
+div.customers {
+    section {
+        grid-template-columns: 200px auto;
+        column-gap: 8px;
+    }//end section
+}//end div
