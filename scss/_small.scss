@@ -89,6 +89,10 @@ div.customers {
             width: 100%;
             height: auto;
             clip-path: circle(50% at 50% 50%);
+            transition: transform 1s;
+            &:hover {
+                transform: rotate(-15deg);
+            }
         }
         p {
 
