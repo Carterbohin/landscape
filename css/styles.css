@@ -352,6 +352,11 @@ main p {
   line-height: 150%;
 }
 
+.swiper, .swiper img {
+  width: 100%;
+  height: auto;
+}
+
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
   background-color: #1d295f;
