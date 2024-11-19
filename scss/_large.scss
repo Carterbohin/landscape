@@ -13,3 +13,12 @@ div.customers {
         column-gap: 8px;
     }//end section
 }//end div
+
+
+
+
+
+div.offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

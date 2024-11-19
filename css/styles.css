@@ -352,6 +352,22 @@ main p {
   line-height: 150%;
 }
 
+div.offer {
+  display: grid;
+}
+div.offer section {
+  position: relative;
+}
+div.offer section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+div.offer section img:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
 .swiper, .swiper img {
   width: 100%;
   height: auto;
@@ -505,6 +521,10 @@ footer a {
     -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
             clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
   }
+  div.offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (min-width: 64rem) {
   header, nav, main {
@@ -516,5 +536,9 @@ footer a {
     grid-template-columns: 200px auto;
     -moz-column-gap: 8px;
          column-gap: 8px;
+  }
+  div.offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }/*# sourceMappingURL=styles.css.map */

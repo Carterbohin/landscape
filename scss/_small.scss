@@ -67,7 +67,24 @@ main {
 }// end main
 
 
+div.offer {
+    display: grid;
+    section{
+        position: relative;
+        h2{
 
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        img:last-child {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
 
 
 

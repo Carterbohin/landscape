@@ -56,3 +56,10 @@ div.customers {
     
     }//end section
 }//end div
+
+
+
+div.offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
