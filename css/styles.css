@@ -301,48 +301,47 @@ template {
   display: none;
 }
 
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/*  Apply a natural box layout model to all elements  */
+/* Apply a natural box layout model to all elements */
 * {
   box-sizing: border-box;
-}
-
+} /* end all elements */
 /* --------------------------- BODY --------------------------- */
 body {
-  font-family: "Spline Sans", sans-serif;
-  font-weight: 300;
+  font-family: Arial, sans-serif; /* Replace $defaultFont */
+  font-weight: 300; /* Replace $lightWeight */
   min-width: 320px;
 }
 
 /* --------------------------- HEADER --------------------------- */
 #headerWrapper {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; /* Replace $greyColor */
   position: relative; /* Keeps the header in flow */
   z-index: 1100; /* Ensures it stays above the nav bar */
 }
 
-/* Header styles remain as they are */
 header {
   display: grid;
   grid-template-columns: 50px auto 44px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem; /* Replace $gutter */
   align-items: center; /* Vertically centers items */
-  padding: 0.5rem 10px;
+  padding: 0.5rem 1rem; /* Replace $gutter */
 }
+
 header a {
   text-align: center;
   text-decoration: none;
   color: #000;
   font-size: medium;
 }
+
 header a:hover {
-  color: #840e43;
+  color: #666; /* Replace $secondaryColor */
 }
 
 #navWrapper {
@@ -356,34 +355,43 @@ header a:hover {
   padding: 20px;
   color: white;
 }
+
 #navWrapper li {
   padding: 10px;
 }
 
 /* --------------------------- MAIN --------------------------- */
 main h1 {
-  padding: 1rem 10px 0.5rem 10px;
+  padding: 1rem 0.5rem 1rem;
   font-size: 1.5rem;
-  color: #840e43;
-  font-weight: 300;
+  color: #666; /* Replace $secondaryColor */
+  font-weight: 300; /* Replace $lightWeight */
 }
+
 main p {
-  padding: 0.5rem 10px;
+  padding: 0.5rem 1rem; /* Replace $gutter */
   color: #333;
-  line-height: 150%;
+  line-height: 1.6; /* Replace $leading */
 }
 
 div.offer {
   display: grid;
 }
+
 div.offer section {
   position: relative;
 }
+
+div.offer section h2 {
+  /* Add styles as needed */
+}
+
 div.offer section img {
   width: 100%;
   height: auto;
   display: block;
 }
+
 div.offer section img:last-child {
   position: absolute;
   bottom: 0;
@@ -410,7 +418,7 @@ div.offer section img:last-child {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds contrast for visibility */
   z-index: 10; /* Ensures it appears above the image */
   text-align: center;
-  background-color: #1d295f;
+  background-color: #0044cc; /* Replace $primaryColor */
   padding: 10px;
   border-radius: 10px;
 }
@@ -419,9 +427,11 @@ div.customers {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 div.customers div {
   padding: 7px;
 }
+
 div.customers div img {
   width: 100%;
   height: auto;
@@ -429,23 +439,26 @@ div.customers div img {
           clip-path: circle(50% at 50% 50%);
   transition: transform 1s;
 }
+
 div.customers div img:hover {
   transform: rotate(-15deg);
 }
+
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #0044cc; /* Replace $primaryColor */
 }
 
 footer {
   font-size: 0.85rem;
-  padding: 1rem 10px;
-  color: #ccc;
+  padding: 1rem 1rem; /* Replace $gutter */
+  color: #ccc; /* Replace $greyColor */
   text-align: center;
-  line-height: 150%;
+  line-height: 1.6; /* Replace $leading */
 }
+
 footer a {
-  color: #ccc;
+  color: #ccc; /* Replace $greyColor */
 }
 
 @media only screen and (max-width: 34.9375rem) {
