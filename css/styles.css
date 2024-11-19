@@ -337,6 +337,15 @@ header span {
   font-weight: 300;
   color: #1d295f;
 }
+header a {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-size: medium;
+}
+header a:hover {
+  color: #7c1d47;
+}
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 /* --------------------------- MAIN --------------------------- */

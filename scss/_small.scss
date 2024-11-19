@@ -33,6 +33,15 @@ header {
         font-weight: $lightWeight;
         color: $primaryColor;
     }
+    a {
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        font-size:medium;
+    }
+    a:hover {
+        color: $secondaryColor;
+    }
 } // end header
 
 
