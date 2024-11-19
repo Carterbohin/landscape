@@ -61,10 +61,30 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img src="images/farm-small.jpg"></div>
-      <div class="swiper-slide"><img src="images/park-small.jpg"></div>
-      <div class="swiper-slide"><img src="images/street-small.jpg"></div>
-      ...
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/farm-small.jpg" media="(max-width: 400px)">
+            <source srcset="images/farm-medium.jpg" media="(max-width: 800px)">
+            <img src="images/farm-large.jpg" alt="sliderA" width="16" height="5">
+        </picture>
+      </div>
+    
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/park-small.jpg" media="(max-width: 400px)">
+            <source srcset="images/park-medium.jpg" media="(max-width: 800px)">
+            <img src="images/park-large.jpg" alt="sliderA" width="16" height="5">
+        </picture>
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/street-small.jpg" media="(max-width: 400px)">
+            <source srcset="images/street-medium.jpg" media="(max-width: 800px)">
+            <img src="images/street-large.jpg" alt="sliderA" width="16" height="5">
+        </picture>
+      </div>
+
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
