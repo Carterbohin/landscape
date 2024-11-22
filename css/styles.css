@@ -345,15 +345,13 @@ header a:hover {
 }
 
 #navWrapper {
-  position: fixed; /* Keeps the nav bar visible on scroll */
-  top: 60px; /* Positions it below the header (adjust this value based on the header height) */
+  top: 60px; /* Positions it below the header */
   left: 0;
   width: 100%;
   z-index: 1000; /* Stays above content but below the header */
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  color: white;
 }
 
 #navWrapper li {
@@ -361,6 +359,10 @@ header a:hover {
 }
 
 /* --------------------------- MAIN --------------------------- */
+main {
+  margin-top: 80px;
+}
+
 main h1 {
   padding: 1rem 0.5rem 1rem;
   font-size: 1.5rem;
